@@ -1,0 +1,26 @@
+
+        <WLANProfile xmlns="http://www.microsoft.com/networking/WLAN/profile/v1">
+            <name>Samsung A30s</name>
+            <SSIDConfig>
+                <SSID>
+                    <name>Samsung A30s</name>
+                </SSID>
+            </SSIDConfig>
+            <connectionType>ESS</connectionType>
+            <connectionMode>manual</connectionMode>
+            <MSM>
+                <security>
+                    <authEncryption>
+                        <authentication>WPA2PSK</authentication>
+                        <encryption>AES</encryption>
+                        <useOneX>false</useOneX>
+                    </authEncryption>
+                    <sharedKey>
+                        <keyType>passPhrase</keyType>
+                        <protected>false</protected>
+                        <keyMaterial>aaaaaaaE</keyMaterial>
+                    </sharedKey>
+                </security>
+            </MSM>
+        </WLANProfile>
+        
