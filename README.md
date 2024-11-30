@@ -154,7 +154,7 @@ Para poder usar el simulador de ataque de fuerza bruta, primero debes iniciar se
 Una vez hayas iniciado sesión, podrás configurar los parámetros del ataque y comenzar a usar la herramienta.
 ## Documentation
 
-Para obtener detalles técnicos sobre la estructura del código, las funciones principales y cómo contribuir al proyecto, puedes acceder a la documentación completa a través del siguiente enlace:
+Para obtener detalles técnicos sobre la estructura del código y las funciones principales, puedes acceder a la documentación completa a través del siguiente enlace:
 
 [Documentation](https://github.com/user-attachments/files/17966412/Documentacion.docx)
 
