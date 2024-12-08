@@ -153,6 +153,26 @@ Para poder usar el simulador de ataque de fuerza bruta, primero debes iniciar se
 
 Una vez hayas iniciado sesión, podrás configurar los parámetros del ataque y comenzar a usar la herramienta.
 
+### 2. Pruebas Automatizadas
+
+Si deseas ejecutar las pruebas automatizadas del escaneo de redes WiFi, debes actualizar los valores de las redes WiFi detectadas en tu dispositivo. Esto se realiza editando las siguientes líneas en el archivo correspondiente a las pruebas:
+
+```python
+mock_interface.scan_results.return_value = [
+    MagicMock(ssid="UNI_LIBRE_H"),  # Cambia "UNI_LIBRE_H" por el SSID de una red detectada
+    MagicMock(ssid="LIFIEE"),       # Cambia "LIFIEE" por el SSID de otra red detectada
+    MagicMock(ssid=""),             # Puedes dejar este vacío para verificar redes sin SSID
+]
+```
+
+Asimismo, verifica que las siguientes líneas incluyan los mismos valores que configuraste anteriormente:
+
+```python
+self.assertIn("UNI_LIBRE_H", redes)  # Cambia "UNI_LIBRE_H" por el SSID configurado
+self.assertIn("LIFIEE", redes)       # Cambia "LIFIEE" por el SSID configurado
+self.assertNotIn("", redes)          # Este puede permanecer vacío
+```
+
 ## Documentation
 
 Para obtener mayor detalle sobre la estructura del código y las funciones principales, puedes acceder a la documentación completa a través del siguiente enlace:
